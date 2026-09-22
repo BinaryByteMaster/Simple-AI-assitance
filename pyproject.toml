@@ -1,0 +1,26 @@
+[project]
+name = "ai-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "khoo0051", email = "khoo0051@student.monash.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepgram-sdk>=7.7.0",
+    "pyaudio>=0.2.14",
+    "python-dotenv>=1.2.2",
+    "sounddevice>=0.5.6",
+    "websockets>=17.0.1",
+]
+
+[tool.uv]
+package = false
+
+[project.scripts]
+ai-project = "ai_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
